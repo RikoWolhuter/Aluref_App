@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496282009544",
+    "project_id": "aluref-6d192",
+    "storage_bucket": "aluref-6d192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496282009544:android:4df824888987155b9e4afd",
+        "android_client_info": {
+          "package_name": "com.Aluref.AlurefApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRsGtcb8ecjgSGjg3ZI5W5bWFz4js2eSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- your_activity_layout.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <!-- Centered ImageView -->
+    <ImageView
+        android:id="@+id/imageViewCentered"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/uc" />
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewCentered"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:minHeight="48dp" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_marginTop="24dp"
+        android:text="Login"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+    <!-- Google Sign-In Button -->
+    <!--Set the button unclickable for now as I have not yet set up google sign-in -->
+    <Button
+        android:id="@+id/buttonGoogleSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Google Sign-In"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+
+        android:enabled="false"/>
+
+</RelativeLayout>

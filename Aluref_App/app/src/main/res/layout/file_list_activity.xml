@@ -1,0 +1,81 @@
+<!-- file_list_activity.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Metal Ladle TextViews will be dynamically added here -->
+            <LinearLayout
+                android:id="@+id/metalLadleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#b6b6b6"
+                    android:clickable="true"
+                    android:onClick="onFileClicked"
+                    android:padding="16dp"
+                    android:text="Metal Ladle"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="Add new file"
+                    android:onClick="onAddFileClicked"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_action_name" />
+
+            </LinearLayout>
+
+            <!-- Bath Ladle TextViews will be dynamically added here -->
+            <LinearLayout
+                android:id="@+id/bathLadleContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Not working with Bath ladles for now -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bath Ladle"
+                    android:background="#39648d"
+                    android:padding="16dp"
+                    android:onClick="onFileClicked"
+                    android:textColor="#FFFFFF"
+
+                    android:clickable="false"
+                    />
+
+                <!-- Add a plus icon for adding new clickable files -->
+                <!--Not working with Bath ladles for now -->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_name"
+                    android:padding="16dp"
+                    android:onClick="onAddFileClicked"
+                    android:contentDescription="Add new file"
+
+                    android:clickable="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

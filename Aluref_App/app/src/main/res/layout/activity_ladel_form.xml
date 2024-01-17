@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Section 1: Ladle Information -->
+        <TextView
+            android:text="LADLE WORKSHOP REALISATION SHEET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:text="Form No.: FM-110\nIssue No.: 1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Ladle Information Inputs -->
+        <!-- Add EditTexts, Spinners, etc. for Ladle Information -->
+
+        <!-- Receiving Date -->
+        <TextView
+            android:text="Receiving Date:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextReceivingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Receiving Date"
+            android:minHeight="48dp" />
+
+        <!-- QA Inspector -->
+        <TextView
+            android:text="QA Inspector:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextQAInspector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter QA Inspector"
+            android:minHeight="48dp" />
+
+        <!-- Ladle No. -->
+        <TextView
+            android:text="Ladle No.:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextLadleNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Ladle No."
+            android:minHeight="48dp" />
+
+        <!-- Ladle Type -->
+        <TextView
+            android:text="Ladle Type: Metal Ladle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+        <!-- Add Spinner for Ladle Type -->
+        <Spinner
+            android:id="@+id/spinnerLadleType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+        <!-- Populate the Spinner with Ladle Type options programmatically -->
+
+        <!-- Section 2: Demolition Observations -->
+        <!-- Add TextViews and input views for Demolition Observations -->
+
+
+
+        <!-- Demolition Observations Title -->
+        <TextView
+            android:text="2. Demolition Observations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- Cycles at time of termination -->
+        <TextView
+            android:text="Cycles at time of termination:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextCycles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Cycles at time of termination"
+            android:minHeight="48dp" />
+
+        <!-- Floor Refractory Thickness -->
+        <TextView
+            android:text="Floor Refractory Thickness (Center of the ladle):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextFloorRefractoryThickness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Floor Refractory Thickness"
+            android:minHeight="48dp" />
+
+        <!-- Floor Refractory Thickness PHOTO -->
+        <TextView
+            android:text="Floor Refractory Thickness PHOTO:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add ImageView for Floor Refractory Thickness PHOTO -->
+        <ImageView
+            android:id="@+id/imageViewFloorRefractoryThickness"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/image_icon"
+            android:scaleType="fitXY"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add other Demolition Observations TextViews and EditTexts as needed -->
+
+        <!-- Section 3: Blasting and Painting -->
+        <!-- Add TextViews and input views for Blasting and Painting -->
+
+        <!-- Blasting and Painting Title -->
+        <TextView
+            android:text="3. Blasting and Painting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- Name of the contractor -->
+        <TextView
+            android:text="Name of the contractor:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextContractorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Contractor's Name"/>
+
+        <!-- Blast and Paint ladle to specification -->
+        <TextView
+            android:text="Blast and Paint ladle to specification:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add CheckBox, RadioButton, or Spinner for specification selection -->
+        <!-- For example, using a CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxBlastPaintSpecification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, to specification"/>
+
+        <!-- Date completed -->
+        <TextView
+            android:text="Date completed:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextBlastPaintDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date Completed"/>
+
+        <!-- Add other Blasting and Painting TextViews and Input views as needed -->
+
+        <!-- Section 4: Load Testing/NDT Testing -->
+        <!-- Add TextViews and input views for Load Testing/NDT Testing -->
+
+        <!-- Load Testing/NDT Testing Title -->
+        <TextView
+            android:text="4. Load Testing/NDT Testing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- Name of the testing authority -->
+        <TextView
+            android:text="Name of the testing authority:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextTestingAuthority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Testing Authority"/>
+
+        <!-- Check welds for cracks -->
+        <TextView
+            android:text="Check welds for cracks:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add CheckBox, RadioButton, or Spinner for crack check -->
+        <!-- For example, using a CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxCrackCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, checked for cracks"/>
+
+        <!-- Date completed -->
+        <TextView
+            android:text="Date completed:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextCrackCheckDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date Completed"/>
+
+        <!-- Type of Test -->
+        <TextView
+            android:text="Type of Test:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add Spinner for test type -->
+        <Spinner
+            android:id="@+id/spinnerTestType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!-- Populate the Spinner with Test Type options programmatically -->
+
+        <!-- Add other Load Testing/NDT Testing TextViews and Input views as needed -->
+
+        <!-- Section 5: Record batch numbers for material installed -->
+        <!-- Add a TableLayout or RecyclerView for the material table -->
+        <!-- Add EditTexts for measurements -->
+
+        <!-- Record batch numbers for material installed Title -->
+        <TextView
+            android:text="5. Record batch numbers for material installed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- TableLayout for Material Table -->
+        <TableLayout
+            android:id="@+id/tableLayoutMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <!-- Table header -->
+            <TableRow>
+                <TextView
+                    android:text="Material"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="Type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="Batch No."
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"/>
+                <!-- Add more table headers as needed -->
+            </TableRow>
+
+            <!-- Table rows (data) -->
+            <TableRow>
+                <EditText
+                    android:id="@+id/editTextMaterial1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Material"/>
+                <EditText
+                    android:id="@+id/editTextType1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Type"/>
+                <EditText
+                    android:id="@+id/editTextBatchNo1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Batch No."/>
+                <!-- Add more EditTexts for other data as needed -->
+            </TableRow>
+
+            <!-- Add more table rows as needed -->
+
+        </TableLayout>
+
+        <!-- Measurements TextViews and EditTexts -->
+        <!-- For example, add EditTexts for measurements -->
+        <TextView
+            android:text="Measure one Side Wall brick at random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextMeasurement1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="249.5 – 250.5 mm"/>
+
+        <!-- Add more Measurements TextViews and EditTexts as needed -->
+
+        <!-- Section 6: Installation of refractory materials -->
+        <!-- Add TextViews and input views for Installation of refractory materials -->
+
+        <!-- Installation of refractory materials Title -->
+        <TextView
+            android:text="6. Installation of refractory materials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- Check test certificates for refractory materials against the data sheets -->
+        <TextView
+            android:text="Check test certificates for refractory materials against the data sheets:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add CheckBox, RadioButton, or Spinner for check -->
+        <!-- For example, using a CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxTestCertificates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checked and comply"/>
+
+        <!-- Start date -->
+        <TextView
+            android:text="Start date:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Start Date"/>
+
+        <!-- Completion date -->
+        <TextView
+            android:text="Completion date:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextCompletionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Completion Date"/>
+
+        <!-- Measure gap between brick and shell -->
+        <TextView
+            android:text="Measure gap between brick and shell (70 - 25mm):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextGapMeasurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Gap Measurement"/>
+
+        <!-- Check gaps between bricks (0-3mm) -->
+        <TextView
+            android:text="Check gaps between bricks (0-3mm):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add CheckBox, RadioButton, or Spinner for check -->
+        <!-- For example, using a CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBoxGapsCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comply"/>
+
+        <!-- Remark describing the reason for the deviation -->
+        <TextView
+            android:text="Remark describing the reason for the deviation:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextDeviationRemark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Deviation Remark"/>
+
+        <!-- Add other Installation of refractory materials TextViews and Input views as needed -->
+
+        <!-- Section 7: Thermal curing of lining -->
+        <!-- Add TextViews and input views for Thermal curing of lining -->
+
+        <!-- Thermal curing of lining Title -->
+        <TextView
+            android:text="7. Thermal curing of lining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- Check condition of the ladle spout and cleanliness -->
+        <TextView
+            android:text="Check condition of the ladle spout and that the ladle is clean from any foreign matter in the inside and outside:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add RadioButton, CheckBox, or Spinner for yes or no answer -->
+        <!-- For example, using a RadioGroup with RadioButtons -->
+        <RadioGroup
+            android:id="@+id/radioGroupLadleCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radioButtonNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <!-- General notes -->
+        <TextView
+            android:text="General notes:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextGeneralNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter General Notes"/>
+
+        <!-- Add other Thermal curing of lining TextViews and Input views as needed -->
+
+        <!-- Section 8: Final Release -->
+        <!-- Add TextViews and input views for Final Release -->
+
+        <!-- Final Release Title -->
+        <TextView
+            android:text="8. Final Release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <!-- QA Inspector Name -->
+        <TextView
+            android:text="QA Inspector Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextQAInspectorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter QA Inspector Name"/>
+
+        <!-- QA Inspector Signature -->
+        <TextView
+            android:text="QA Inspector Signature:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Add ImageView for Signature -->
+        <ImageView
+            android:id="@+id/imageViewQASignature"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/signature_icon"
+            android:scaleType="fitXY"
+            android:layout_marginTop="8dp"/>
+
+        <!-- QA Inspector Date -->
+        <TextView
+            android:text="Date:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextQADate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date"/>
+
+        <!-- Add other Final Release TextViews and Input views as needed -->
+
+    </LinearLayout>
+
+</ScrollView>
