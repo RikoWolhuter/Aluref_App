@@ -7,7 +7,7 @@
 
 import React from 'react';
 import LoginComponent from './Components/LoginComponent';
-import './firebase';
+//
 
 function App() {
   return (
