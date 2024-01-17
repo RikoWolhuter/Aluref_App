@@ -23,14 +23,12 @@ const LoginActivity = () => {
   };
 
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', marginTop: -150, backgroundColor: 'white' }}>
       {/* Centered Image */}
-      {/*
       <Image
         style={{ width: 250, height: 250, marginTop: 32 }}
-        source={require('./uc.png')}
+        source={require('../uc.png')}
       />
-  */}
 
       {/* Email TextInput */}
       <TextInput
@@ -41,8 +39,10 @@ const LoginActivity = () => {
           borderColor: 'gray',
           borderWidth: 1,
           paddingLeft: 8,
+          color: 'black',
         }}
         placeholder="Email"
+        placeholderTextColor="#808080"
         value={email}
         onChangeText={(text) => setEmail(text)}
       />
@@ -53,11 +53,14 @@ const LoginActivity = () => {
           width: '80%',
           height: 48,
           marginTop: 16,
+          marginBottom: 20,
           borderColor: 'gray',
           borderWidth: 1,
           paddingLeft: 8,
+          color: 'black',
         }}
         placeholder="Password"
+        placeholderTextColor="#808080"
         secureTextEntry
         value={password}
         onChangeText={(text) => setPassword(text)}
@@ -67,8 +70,8 @@ const LoginActivity = () => {
       <Button
         title="Login"
         onPress={handleLogin}
-        style={{ marginTop: 24, width: '80%' }}
-        color="#841584"
+        style={{ marginTop: 10, width: '80%' }}
+        color="#000080"
       />
 
       {/* Google Sign-In Button */}
@@ -77,8 +80,8 @@ const LoginActivity = () => {
         style={{
           width: '80%',
           height: 48,
-          marginTop: 16,
-          backgroundColor: '#4285F4',
+          marginTop: 20,
+          backgroundColor: '#DC973D',
           alignItems: 'center',
           justifyContent: 'center',
         }}
