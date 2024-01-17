@@ -25,10 +25,12 @@ const LoginActivity = () => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       {/* Centered Image */}
+      {/*
       <Image
         style={{ width: 250, height: 250, marginTop: 32 }}
-        source={require('./assets/images/uc.png')}
+        source={require('./uc.png')}
       />
+  */}
 
       {/* Email TextInput */}
       <TextInput
