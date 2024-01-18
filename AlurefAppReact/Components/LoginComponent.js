@@ -7,14 +7,22 @@ import {
   TouchableOpacity,
   Text,
 } from 'react-native';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebase';
 
 const LoginActivity = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Implement your login functionality here
-    console.log('Login pressed');
+  const handleLogin = async (email, password) => {
+    try {
+      const response = await signInWithEmailAndPassword(auth, email, password);
+      console.log('Login successful', response.user.uid);
+      // Implement navigation or any other logic after successful login
+    } catch (error) {
+      console.error('Login failed', error.message);
+      // Handle login failure, e.g., show an error message
+    }
   };
 
   const handleGoogleSignIn = () => {
@@ -68,11 +76,12 @@ const LoginActivity = () => {
 
       {/* Login Button */}
       <Button
-        title="Login"
-        onPress={handleLogin}
-        style={{ marginTop: 10, width: '80%' }}
-        color="#000080"
-      />
+  title="Login"
+  onPress={() => handleLogin(email, password)}
+  style={{ marginTop: 10, width: '80%' }}
+  color="#000080"
+/>
+
 
       {/* Google Sign-In Button */}
       <TouchableOpacity
